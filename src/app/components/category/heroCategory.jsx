@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import CategoryCard from "./categoryCard";
+import CategoryThumbnail from "./categoryThumbnail";
 
 const HeroCategory = () => {
   return (
@@ -18,7 +19,7 @@ const HeroCategory = () => {
       </div>
       <div className="flex items-center justify-between mt-6">
         <div className="flex items-center gap-[87px]">
-          <h5 className="text-4xl font-semibold leading-10">Flash Sales</h5>
+          <h5 className="text-4xl font-semibold leading-10">Browse By Category</h5>
         </div>
 
         <div className="flex gap-2 mr-5">
@@ -37,6 +38,9 @@ const HeroCategory = () => {
             <CategoryCard/>
             <CategoryCard/>
             <CategoryCard/>
+      </div>
+      <div className="mt-[100px]">
+        <CategoryThumbnail/>
       </div>
     </div>
   );

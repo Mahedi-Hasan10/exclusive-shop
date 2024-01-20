@@ -1,4 +1,3 @@
-import { FaPhone } from "react-icons/fa";
 import { IoIosPhonePortrait } from "react-icons/io";
 const CategoryCard = () => {
     return (

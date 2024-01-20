@@ -4,7 +4,7 @@ import { Rate } from 'antd';
 import { FaRegHeart } from 'react-icons/fa';
 import { LuEye } from "react-icons/lu";
 
-const Product = () => {
+const Product = ({thumbnail, productTitle, productPrice}) => {
     const loveClick = () => {
         alert("added to wishlist")
     }
@@ -29,9 +29,8 @@ const Product = () => {
                 <Rate disabled defaultValue={4} /> <p className='text-slate-500'>(60)</p>
                 </div>
                 <div className='absolute top-4 right-4 flex flex-col gap-2 text-2xl'>
-                    <LuEye onClick={loveClick} className='hover:text-red-600 bg-white rounded-full h-[40px] w-[40px] p-2'/>
-                    <FaRegHeart onClick={eyeClick} className='hover:text-red-400 bg-white rounded-full h-[40px] w-[40px] p-2'/>
-  
+                    <LuEye onClick={loveClick} className='hover:bg-red-600 hover:text-white bg-white rounded-full h-[40px] w-[40px] p-2'/>
+                    <FaRegHeart onClick={eyeClick} className='hover:bg-red-400 hover:text-white bg-white rounded-full h-[40px] w-[40px] p-2'/>
                 </div>
                 <h5 className='px-4 py-2 bg-red-400 absolute top-0 left-0 text-white'>Off 30%</h5>
             </div>

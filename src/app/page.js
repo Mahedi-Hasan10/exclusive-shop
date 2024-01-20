@@ -1,8 +1,11 @@
 import BestSellingProduct from "./components/bestSellingProduct/bestSellingProduct";
 import HeroCategory from "./components/category/heroCategory";
+import ExploreProducts from "./components/hero/exploreProducts";
+import Featured from "./components/hero/featured";
 import HeroAside from "./components/hero/heroAside";
 import HeroCarosul from "./components/hero/heroCarosul";
 import HeroTodays from "./components/hero/heroTodays";
+import ServiceSection from "./components/service/serviceSection";
 
 export default function Home() {
   return (
@@ -21,11 +24,21 @@ export default function Home() {
         <HeroTodays />
       </section>
       <section>
+        <BestSellingProduct/>
+      </section>
+      <section>
         <HeroCategory />
       </section>
       <section>
-        <BestSellingProduct/>
+        <ExploreProducts />
       </section>
+      <section>
+        <Featured />
+      </section>
+      <section>
+        <ServiceSection />
+      </section>
+      
     </main>
   );
 }
